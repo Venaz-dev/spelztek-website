@@ -66,9 +66,9 @@
 
 @media (max-width: 700px){
     .edu-title{
-        right: 0;
+        right: 10px;
         top: 0;
-        font-size: 16px;
+        font-size: 50px;
         margin-top: 0;
     }
     .education-container{
