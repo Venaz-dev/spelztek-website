@@ -131,8 +131,13 @@ h2{
     justify-content: center;
 }
 
-.navbar-toggler-icon{
-    background: url("./images/offcanvas-icon.png");
+.toggler-icon{
+    height: 60px;
+    width: 60px;
+    margin-right: 45px;
+    background-image: url("./images/offcanvas-icon.png");
+    background-position: 50%;
+    background-size: cover;
 }
 
 
@@ -249,7 +254,7 @@ img {vertical-align: middle;}
 
 @media (max-width: 700px){
     .div-container{
-        width: 100vw;
+        width: 100%;
         margin: 0;
     }
     .about p{
