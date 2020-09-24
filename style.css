@@ -1,284 +1,178 @@
 body{
-    font-family: 'poppins';
+    font-family: 'Poppins';
     overflow: hidden;
 }
-.div-container{
-    padding-top: 15vh;
-    width: 80vw;
-    margin: auto;
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 90px;
+    box-shadow: none;
+
 }
 
-.navbar-bg{
-    background-color: #71b1ec;
-    color: white;
-    padding: 0;
+.links{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
 }
+
+.link{
+    text-decoration: none;
+    
+}
+
 h2{
+    font-size: 40px;
+}
+.image-full-screen{
+    min-width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.get-started{
+    height: 20vh;
+    background-color: #011D34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get-started h2{
+    margin: 0;
+    font-style: 80px;
+    color: #fff;
+}
+
+.ar-branding{
+    display: flex;
+    padding-left: 90px;
+    padding-top: 50px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.ar-branding .branding-image{
+    width: 35%;
+    background-color: blue;
+}
+.ar-branding .branding-text{
+    padding-top: 30px;
+    width: 60%;
+}
+.branding-text h2{
+    font-size: 40px;
+}
+.branding-text p{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.ar-video{
+    padding: 0 90px;
+    margin-bottom: 70px;
+}
+.ar-video p{
+    text-align: center;
+    font-size: 30px;
+    color: #BEB6B6;
+}
+.ar-video h2{
+    text-align: center;
+    font-size: 40px;
+}
+.ar-video .video-holder{
+    min-height: 70vh;
+    background-color: brown;
+    width: 100%;
+}
+
+.vision{
+    height: 40vh;
+    color: #fff;
+    padding: 90px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.education-container.virtual-tour{
-    margin-top: -110px;
-    margin-bottom: -50px;
-    background: none;
-    clip-path: none;
-    box-shadow: none;
-    padding-bottom: 0px;
-}
-.virtual-tour h2{
-    color: #111111;
-}
-.virtual-tour p{
-    color: #111111;
-    padding-right: 50px;
-    font-size: 20px;
-}
-
-.contact-wrap{
-    position: relative;
-}
-
-.contact{
-    margin-right: 0;
-    z-index: 20;
-    width: 80vw;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    height: 80vh;
-    background-color: #71b1ec;
-    margin-top: 0px;
-    clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0 75%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    align-items: center;
-    justify-content: center;
-}
-
-.contact h2{
-    color: #ffffff;
-    font-family: 'poppins';
-}
-
-.contact-form{
+.case-study{
+    margin: 50px 0 100px 0;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.case-study p{
+    text-align: center;
+    font-size: 30px;
+    color: #BEB6B6;
+}
+.case-study h2{
+    text-align: center;
 }
 
-.socials{
-    margin-top: 30px;
-    float: right;
-    width: fit-content;
-    position: absolute;
-    right: 10vw;
-    
-}
-.socials h2{
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-.socials img{
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    margin-left: 15px;
-    margin-top: 10px;
-}
-
-.form-control {
-    width: 80%;
-    border-radius: 5px;
-    margin: auto;
-    
-}
-.form-control:focus {
-    box-shadow: none;
-}
-
-.email-holder{
-    margin-top: 30px;
-}
-
-.about{
-    color: rgb(109, 109, 109);
-    position: relative;
+.case-study .cards{
     margin-top: 50px;
-}
-
-
-.about h2{
-    font-size: 3em;
-    margin-bottom: 50px;
-}
-.about p{
-    font-size: 18px;
-    width: 53vw;
-    z-index: 1;
-}
-.about img{
-    position: absolute;
-    right: 0;
-    top: 30px;
-    opacity: 0.3;
-}
-
-.send-btn{
-    margin-left: 36px;
-    margin-top: 20px;
-    width: 100px;
-}
-
-.social-icons{
+    width: 70%;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards .card{
+    margin-top: 30px;
+    width: 40%;
+    min-height: 30vh;
+    background-color: chartreuse;
+}
+
+.contact p{
+    text-align: center;
+    font-size: 30px;
+    color: #BEB6B6;
+}
+.contact .social-icons{
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
-
-.toggler-icon{
-    height: 60px;
+.social-icons .social{
+    min-height: 60px;
     width: 60px;
-    margin-right: 15px;
-    background-image: url("./images/offcanvas-icon.png");
-    background-position: 50%;
-    background-size: cover;
+    background-color: cornflowerblue;
+    margin: 0 50px;
 }
 
-
-/* Slide show Styling */
-
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-.mySlides img{
-    max-height: 400px;
+.footer{
+    box-sizing: border-box;
+    height: 40vh;
+    width: 100%;
+    background-color: #011D35;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    margin-top: 100px;
 }
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  margin-bottom: 0px;
+.footer .contact-info{
+    width: 40%;
+    margin-bottom: 100px;
 }
-
-/* Next & previous buttons */
-.slide-prev, .slide-next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  text-decoration: none;
+.footer .footer-vision{
+    width: 40%;
+    margin-bottom: 100px;
 }
-
-/* Position the "next button" to the right */
-.slide-next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.footer h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #C1BDBD;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.slide-prev:hover, .slide-next:hover {
-  background-color: rgba(0,0,0,0.8);
-  border-radius: 40%;
-  color: white ;
-  text-decoration: none;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade-in {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .slide-prev, .slide-next,.text {font-size: 11px}
-}
-/* End of SlideShow Style */
-
-
-@media (max-width: 700px){
-    .div-container{
-        width: 100%;
-        margin: 0;
-        overflow: hidden;
-    }
-    .nav-item{
-        margin-left: 30px;
-    }
-    .about p{
-        width: 100%;
-        padding: 30px;
-        color: black;
-        font-size: 16px;
-    }
-
-    .about img{
-        opacity: 0.2;
-    }
-
-    .contact{
-        margin-top: 10vh;
-        padding-top: 20vh;
-        width: 100vw;
-        height: 100vh;
-    }
-    
-
+.footer p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #C1BDBD;
 }
