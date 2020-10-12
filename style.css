@@ -9,9 +9,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 90px;
+    padding: 15px 90px;
     box-shadow: none;
+    transition: all .5s;
 
+}
+
+header img{
+    height: 50px;
 }
 
 .links{
@@ -19,7 +24,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: red;
+    color: #fff;
 }
 
 .link{
@@ -28,12 +33,17 @@ header{
 }
 
 h2{
-    font-size: 40px;
+    font-size: 25px;
 }
 .image-full-screen{
-    min-width: 100vw;
+    width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
+    object-fit: cover;
+    /* background-color: aquamarine; */
+}
+.image-full-screen img{
+    height: inherit;
+    width: inherit;
 }
 .get-started{
     height: 20vh;
@@ -57,7 +67,12 @@ h2{
 }
 .ar-branding .branding-image{
     width: 35%;
-    background-color: blue;
+    background-color: red;
+}
+.branding-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .ar-branding .branding-text{
     padding-top: 30px;
@@ -86,8 +101,13 @@ h2{
 }
 .ar-video .video-holder{
     min-height: 70vh;
-    background-color: brown;
+    /* background-color: brown; */
     width: 100%;
+}
+.ar-video .video-holder img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .vision{
@@ -142,10 +162,14 @@ h2{
     align-items: center;
 }
 .social-icons .social{
-    min-height: 60px;
-    width: 60px;
-    background-color: cornflowerblue;
+    height: 50px;
+    width: 50px;
     margin: 0 50px;
+    cursor: pointer;
+}
+.social img{
+    height: inherit;
+    width: inherit;
 }
 
 .footer{

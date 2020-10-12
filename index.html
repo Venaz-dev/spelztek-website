@@ -17,7 +17,7 @@
 <body id="home-version-1" class="home" data-style="default">
   <header id="header">
     <div class="logo">
-
+      <img src="./assets/logo.png"/>
     </div>
     <div class="links" id="link">
       <a  class="link" href="#">ABOUT</a>
@@ -26,7 +26,9 @@
       <a class="link" href="#">CONTACT</a>
     </div>
   </header>
-  <div class="image-full-screen"></div>
+  <div class="image-full-screen">
+    <img src="./assets/home-image.jpeg" alt="Augmented REALITY">
+  </div>
   <div class="get-started">
     <h2>Get started with us</h2>
   </div>
@@ -46,7 +48,7 @@
       </p>
     </div>
     <div class="branding-image">
-
+      <img src="./assets/business-card.jpg">
     </div>
 
   </div>
@@ -54,7 +56,7 @@
     <p>Take a tour</p>
     <h2>ARBRANDING EXPLAINED IN 90 SECONDS</h2>
     <div class="video-holder">
-
+      <img src="./assets/video-place.jpg" />
     </div>
   </div>
   <div class="vision">
@@ -75,10 +77,10 @@
   <div class="contact">
     <p>Follow us</p>
     <div class="social-icons">
-      <div class="social"></div>
-      <div class="social"></div>
-      <div class="social"></div>
-      <div class="social"></div>
+      <div class="social"><img src="./assets/linkedin.svg"/></div>
+      <div class="social"><img src="./assets/youtube-logo.svg"/></div>
+      <div class="social"><img src="./assets/twitter.svg"/></div>
+      <div class="social"><img src="./assets/facebook-logo.svg"/></div>
     </div>
   </div>
   <div class="footer">
@@ -100,8 +102,8 @@
   const handleScroll = (event) => {
     let scrollTop = window.scrollY
           if(scrollTop > 100){
-            document.getElementById("header").style.backgroundColor = "white";
-            document.getElementById("link").style.color = "black"
+            document.getElementById("header").style.backgroundColor = "#011D34";
+            // document.getElementById("link").style.color = "black"
             document.getElementById("header").style.boxShadow="0px 3px 10px #00000029"
             
           }else {
