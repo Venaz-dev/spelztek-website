@@ -19,7 +19,15 @@
     <div class="logo">
       <img src="./assets/logo.png"/>
     </div>
+    <button class="burger-menu" onclick="openSide()"><img src="./assets/menu_white.svg"/></button>
     <div class="links" id="link">
+      <a  class="link" href="#">ABOUT</a>
+      <a class="link" href="#">SUPPORT</a>
+      <a class="link" href="#">MARKETPLACE</a>
+      <a class="link" href="#">CONTACT</a>
+    </div>
+    <div class="mobile-links" id="sidenav">
+      <span onclick="closeSide()" class="close">&#10005;</span>
       <a  class="link" href="#">ABOUT</a>
       <a class="link" href="#">SUPPORT</a>
       <a class="link" href="#">MARKETPLACE</a>
@@ -104,7 +112,7 @@
           if(scrollTop > 100){
             document.getElementById("header").style.backgroundColor = "#011D34";
             // document.getElementById("link").style.color = "black"
-            document.getElementById("header").style.boxShadow="0px 3px 10px #00000029"
+            document.getElementById("header").style.boxShadow="0px 3px 10px #00000069"
             
           }else {
             document.getElementById("header").style.background = "none"
@@ -113,7 +121,12 @@
           }
   }
   window.addEventListener('scroll', handleScroll)
-  
+  const openSide = () => {
+    document.getElementById("sidenav").style.transform = "translateY(0)"
+  }
+  const closeSide = () => {
+    document.getElementById("sidenav").style.transform = "translateY(-100vh)"
+  }
 
 </script>
 
