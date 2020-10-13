@@ -17,38 +17,38 @@
 <body id="home-version-1" class="home" data-style="default">
   <header id="header">
     <div class="logo">
-      <img src="./assets/logo.png"/>
+      <img src="./assets/logo.png" />
     </div>
-    <button class="burger-menu" onclick="openSide()"><img src="./assets/menu_white.svg"/></button>
+    <button class="burger-menu" onclick="openSide()"><img src="./assets/menu_white.svg" /></button>
     <div class="links" id="link">
-      <a  class="link" href="#">ABOUT</a>
+      <a class="link" href="#">ABOUT</a>
       <a class="link" href="#">SUPPORT</a>
       <a class="link" href="#">MARKETPLACE</a>
       <a class="link" href="#">CONTACT</a>
     </div>
     <div class="mobile-links" id="sidenav">
       <span onclick="closeSide()" class="close">&#10005;</span>
-      <a  class="link" href="#">ABOUT</a>
-      <a class="link" href="#">SUPPORT</a>
-      <a class="link" href="#">MARKETPLACE</a>
-      <a class="link" href="#">CONTACT</a>
+      <a class="link" href="#" onclick="closeSide()">ABOUT</a>
+      <a class="link" href="#" onclick="closeSide()">SUPPORT</a>
+      <a class="link" href="#" onclick="closeSide()">MARKETPLACE</a>
+      <a class="link" href="#" onclick="closeSide()">CONTACT</a>
     </div>
   </header>
   <div class="image-full-screen">
-    <img src="./assets/home-image.jpeg" alt="Augmented REALITY"/>
+    <img src="./assets/home-image.jpeg" alt="Augmented REALITY" />
     <div class="get-started">
       <h2>Get started with us</h2>
     </div>
   </div>
-  
+
   <div class="ar-branding">
     <div class="branding-text">
       <h2>ARBranding</h2>
       <p>
         Augmented reality can take branding materials like business cards and brochures to the next level by adding a
         virtual component. Users can scan printed materials with their mobile devices to access a range of features
-        giving them more information and ways to get in contact with the brand. 
-        <br/></br>
+        giving them more information and ways to get in contact with the brand.
+        <br /></br>
         For instance, a user can scan a brochure
         in the right spot to bring up a video highlighting some aspect of the information being conveyed, bringing a
         dynamic element to the static text on the brochure. Alternatively, a business card can use AR to present a
@@ -77,19 +77,19 @@
       CASE STUDIES
     </h2>
     <div class="cards">
-      <div class="card"><img src="./assets/ar-cards.jpg"/></div>
-      <div class="card"><img src="./assets/ar-cards.jpg"/></div>
-      <div class="card"><img src="./assets/ar-cards.jpg"/></div>
-      <div class="card"><img src="./assets/ar-cards.jpg"/></div>
+      <div class="card"><img src="./assets/ar-cards.jpg" /></div>
+      <div class="card"><img src="./assets/ar-cards.jpg" /></div>
+      <div class="card"><img src="./assets/ar-cards.jpg" /></div>
+      <div class="card"><img src="./assets/ar-cards.jpg" /></div>
     </div>
   </div>
   <div class="contact">
     <p>Follow us</p>
     <div class="social-icons">
-      <div class="social"><img src="./assets/linkedin.svg"/></div>
-      <div class="social"><img src="./assets/youtube-logo.svg"/></div>
-      <div class="social"><img src="./assets/twitter.svg"/></div>
-      <div class="social"><img src="./assets/facebook-logo.svg"/></div>
+      <div class="social"><img src="./assets/linkedin.svg" /></div>
+      <div class="social"><img src="./assets/youtube-logo.svg" /></div>
+      <div class="social"><img src="./assets/twitter.svg" /></div>
+      <div class="social"><img src="./assets/facebook-logo.svg" /></div>
     </div>
   </div>
   <div class="footer">
@@ -110,16 +110,16 @@
 
   const handleScroll = (event) => {
     let scrollTop = window.scrollY
-          if(scrollTop > 100){
-            document.getElementById("header").style.backgroundColor = "#011D34";
-            // document.getElementById("link").style.color = "black"
-            document.getElementById("header").style.boxShadow="0px 3px 10px #00000069"
-            
-          }else {
-            document.getElementById("header").style.background = "none"
-            document.getElementById("link").style.color = "white"
-            document.getElementById("header").style.boxShadow="none"
-          }
+    if (scrollTop > 100) {
+      document.getElementById("header").style.backgroundColor = "#011D34";
+      // document.getElementById("link").style.color = "black"
+      document.getElementById("header").style.boxShadow = "0px 3px 10px #00000069"
+
+    } else {
+      document.getElementById("header").style.background = "none"
+      document.getElementById("link").style.color = "white"
+      document.getElementById("header").style.boxShadow = "none"
+    }
   }
   window.addEventListener('scroll', handleScroll)
   const openSide = () => {
@@ -128,7 +128,6 @@
   const closeSide = () => {
     document.getElementById("sidenav").style.transform = "translateY(-100vh)"
   }
-
 </script>
 
 </html>
